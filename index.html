@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css"/>
     <title>Best damn game ever</title>
 </head>
 <body onload="initGame()">
@@ -13,8 +14,9 @@
     <div>
         <section>
             <div class="video"></div>
-            <div class="hints-containter" id="hints-container">
-                Hints
+            <div class="hints-container" id="hints-container">
+
+                <br>
                 <div id="hints">
 
                 </div>
@@ -26,15 +28,16 @@
         </section>
         <aside>
 
-            <div id="instructions">Start this shit</div>
+            <div id="instructions"></div>
 
 
             </div>
 
 
-            <div class="game-result"></div>
-            <div class="guess-letter"></div>
-            Number of letters remaining
+            <div id="game-result"></div>
+            <div id="guess-letter"></div>
+            <div class="tries" id="tries"></div>
+
             <div class="letter-remaining"></div>
             <div class="letter-guest"></div>
 
