@@ -3,6 +3,18 @@
     video   : '<iframe width="400" height="200" src="https://www.youtube.com/embed/di14EZRpMVo?autoplay=1&&controls=0" frameborder="0" allowfullscreen></iframe>'
  }
 
+ var powerman ={
+     name   : "Powerman5000",
+     video  : '<iframe width="400" height="200" src="https://www.youtube.com/embed/lsV500W4BHU?autoplay=1" frameborder="0" allowfullscreen></iframe>',
+     hints  : [" Name with 5000 "," When Worlds Collide "," Frontman Spide One "," Builders of the future "]
+ }
+
+ var filter ={
+     name   : "Filter",
+     video  : '<iframe width="400" height="200" src="https://www.youtube.com/embed/o9mJ82x_l-E?autoplay=1" frameborder="0" allowfullscreen></iframe>',
+     hints  : [" Hey Man Nice Shot "," Take a Picture "," To separate "," Richard Patrick "]
+ }
+
  var ramones ={
      name   : "Ramones",
      video  : '<iframe width="400" height="200" src="https://www.youtube.com/embed/iymtpePP8I8?autoplay=1" frameborder="0" allowfullscreen></iframe>',
@@ -48,7 +60,7 @@
      hints  : [" Pardon Me ", " Drive "," Make Yourself "," Brand Boyd "]
  }
 
- var bands =[incubus, godsmack, ramones, staticX, metallica, Evanescence ,korn]
+ var bands =[incubus, godsmack, ramones, staticX, metallica, Evanescence ,korn, powerman, filter]
 
 
  /*******
@@ -113,7 +125,7 @@
  }
 
  function playAgain(score,rand,alreadyPlayed){
-     var  random = Math.floor(Math.random() * 6)
+     var  random = Math.floor(Math.random() * 8)
      //make sure the random generator picks a different random number
      while(alreadyPlayed.indexOf(random) !== -1){
          random = pickRandom(rand)
@@ -226,17 +238,16 @@
      return winArray
  }
  function pickRandom(rand){
-     var ret=Math.floor(Math.random() * 6)
-     while(rand === Math.floor(Math.random() * 6) ){
-         ret =Math.floor(Math.random() * 6)
+     var ret=Math.floor(Math.random() * 8)
+     while(rand === Math.floor(Math.random() * 8) ){
+         ret =Math.floor(Math.random() * 8)
      }
      return ret
-
  }
 
 
  function initGame(){
-     var rand = Math.floor(Math.random() * 6)
+     var rand = Math.floor(Math.random() * 8)
      var score=0
      document.getElementById("instructions").innerHTML = "<h3>Press any key to Play the best game ever</h3>"
      document.onkeyup = function(evt) {
