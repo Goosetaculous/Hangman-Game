@@ -1,50 +1,50 @@
 
  var lost = {
-    video   : '<iframe width="400" height="200" src="http://www.youtube.com/embed/di14EZRpMVo?autoplay=1&&controls=0" frameborder="0" allowfullscreen></iframe>'
+    video   : '<iframe width="400" height="200" src="https://www.youtube.com/embed/di14EZRpMVo?autoplay=1&&controls=0" frameborder="0" allowfullscreen></iframe>'
  }
 
  var ramones ={
      name   : "Ramones",
-     video  : '<iframe width="400" height="200" src="http://www.youtube.com/embed/iymtpePP8I8?autoplay=1" frameborder="0" allowfullscreen></iframe>',
+     video  : '<iframe width="400" height="200" src="https://www.youtube.com/embed/iymtpePP8I8?autoplay=1" frameborder="0" allowfullscreen></iframe>',
      hints  : [" Blitzkrieg Bop "," I Wanna Be Sedated "," Johnny Ramone "," <--just add an 's' "]
  }
 
  var staticX ={
      name   : "StaticX",
-     video  : '<iframe width="400" height="200" src="http://www.youtube.com/embed/Ps0MfBG5-Uo?autoplay=1" frameborder="0" allowfullscreen></iframe>',
+     video  : '<iframe width="400" height="200" src="https://www.youtube.com/embed/Ps0MfBG5-Uo?autoplay=1" frameborder="0" allowfullscreen></iframe>',
      hints  : [" Push It "," Cold "," Wayne Static "," Cannibal Album "]
  }
 
  var Evanescence ={
      name   : "Evanescence",
-     video  : '<iframe width="400" height="200" src="http://www.youtube.com/embed/3YxaaGgTQYM?autoplay=1" frameborder="0" allowfullscreen></iframe>',
+     video  : '<iframe width="400" height="200" src="https://www.youtube.com/embed/3YxaaGgTQYM?autoplay=1" frameborder="0" allowfullscreen></iframe>',
      hints  : [" Amy Lee "," Bring Me to Life "," My Immortal "]
  }
 
 
  var metallica ={
      name   : "Metallica",
-     video  : '<iframe width="400" height="200" src="http://www.youtube.com/embed/CD-E-LDc384?autoplay=1" frameborder="0" allowfullscreen></iframe>',
+     video  : '<iframe width="400" height="200" src="https://www.youtube.com/embed/CD-E-LDc384?autoplay=1" frameborder="0" allowfullscreen></iframe>',
      hints  : [" Enter Sandman "," James Hetfield "," Nothing Else Matters "," Lars Ulrich "]
  }
 
  var korn ={
      name   : "Korn",
-     video  : '<iframe width="400" height="200" src="http://www.youtube.com/embed/SGK00Q7xx-s?autoplay=1" frameborder="0" allowfullscreen></iframe>',
+     video  : '<iframe width="400" height="200" src="https://www.youtube.com/embed/SGK00Q7xx-s?autoplay=1" frameborder="0" allowfullscreen></iframe>',
 
      hints  : [" Got a life? "," Started in San Bernandino "," Jonathan Davis "," 4 letter band "]
  }
 
  var godsmack ={
      name   : "Godsmack",
-     video  : '<iframe width="400" height="200" src="http://www.youtube.com/embed/opU1urLhw50?autoplay=1" frameborder="0" allowfullscreen></iframe>',
+     video  : '<iframe width="400" height="200" src="https://www.youtube.com/embed/opU1urLhw50?autoplay=1" frameborder="0" allowfullscreen></iframe>',
 
      hints  : [" Vodoo "," smack "," God "," Navy theme song "]
  }
 
  var incubus={
      name   : "Incubus",
-     video  : '<iframe width="400" height="200" src="http://www.youtube.com/embed/fgT9zGkiLig?autoplay=1" frameborder="0" allowfullscreen></iframe>',
+     video  : '<iframe width="400" height="200" src="https://www.youtube.com/embed/fgT9zGkiLig?autoplay=1" frameborder="0" allowfullscreen></iframe>',
      hints  : [" Pardon Me ", " Drive "," Make Yourself "," Brand Boyd "]
  }
 
