@@ -73,6 +73,7 @@
              guessedLetter = replaceArray(arrBlank,findArrayIndexs(evt.key, winArray), evt.key).toString()
              guessedLetter = replaceAll(guessedLetter,",")
              document.getElementById("guess-letter").innerHTML= "<h1>"+guessedLetter+"</h1>"
+             document.getElementById("guess-letter").style.color = "white"
              userInputLetters(arrUserGuess,evt.key)
              arrUserGuess.push(evt.key)
 
