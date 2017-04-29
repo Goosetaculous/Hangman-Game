@@ -1,6 +1,6 @@
 
  var lost = {
-    video   : '<iframe width="400" height="200" src="http://www.youtube.com/embed/di14EZRpMVo?autoplay=1" frameborder="0" allowfullscreen></iframe>'
+    video   : '<iframe width="400" height="200" src="http://www.youtube.com/embed/di14EZRpMVo?autoplay=1&&controls=0" frameborder="0" allowfullscreen></iframe>'
  }
 
  var ramones ={
@@ -97,7 +97,8 @@
          if(triesCtr == 0){
              document.getElementById("tries").innerHTML=""
              document.getElementById("hints").innerHTML=lost.video
-             document.getElementById("guess-letter").innerHTML="<h3>SORRY YOU HAVE NO MORE TRIES ENJOY!</h3>"
+             document.getElementById("guess-letter").innerHTML="<h3>You didn't guess it right!! Suffer the consequence!</h3>"
+             document.getElementById("guess-letter").style.color = "red"
              playAgain(score,rand,alreadyPlayed)
          }
      }
@@ -111,14 +112,12 @@
  }
 
  function playAgain(score,rand,alreadyPlayed){
-     var  random = Math.floor(Math.random() * 5)
+     var  random = Math.floor(Math.random() * 6)
      //make sure the random generator picks a different random number
      while(alreadyPlayed.indexOf(random) !== -1){
          random = pickRandom(rand)
      }
-
-
-     document.getElementById("instructions").innerHTML = "<h3>Press any key to Play the best game ever AGAIN</h3>"
+     document.getElementById("instructions").innerHTML = "<h3>Press any key to play the best game ever.... AGAIN</h3>"
      document.onkeyup = function(evt) {
          if(evt.key){
              arrBlank = generateblankLetters(random)
@@ -127,7 +126,6 @@
          }
      }
  }
-
  function userInputLetters(arr,key){
      for( var i = 0; i <arr.length ; i++){
          if( arr[i] == key){
@@ -137,10 +135,7 @@
              document.getElementById("already-guessed").innerHTML="<h3>YOU GUESS THE FOLLOWING LETTERS</h3><h4>"+arr+"</h4>"
          }
      }
-
  }
-
-
  /**
   *
   * @param str - string
@@ -230,9 +225,9 @@
      return winArray
  }
  function pickRandom(rand){
-     var ret=Math.floor(Math.random() * 5)
-     while(rand === Math.floor(Math.random() * 5) ){
-         ret =Math.floor(Math.random() * 5)
+     var ret=Math.floor(Math.random() * 6)
+     while(rand === Math.floor(Math.random() * 6) ){
+         ret =Math.floor(Math.random() * 6)
      }
      return ret
 
@@ -240,7 +235,7 @@
 
 
  function initGame(){
-     var rand = Math.floor(Math.random() * 5)
+     var rand = Math.floor(Math.random() * 6)
      var score=0
      document.getElementById("instructions").innerHTML = "<h3>Press any key to Play the best game ever</h3>"
      document.onkeyup = function(evt) {
