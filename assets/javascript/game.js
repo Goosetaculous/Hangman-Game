@@ -110,7 +110,7 @@
          if(triesCtr == 0){
              document.getElementById("tries").innerHTML=""
              document.getElementById("hints").innerHTML=lost.video
-             document.getElementById("guess-letter").innerHTML="<h3>You didn't guess " +bands[rand].name+ " right!! Suffer the consequence!</h3>"
+             document.getElementById("guess-letter").innerHTML="<h3>You didn't guess <span>" +bands[rand].name+ "</span> right!! Suffer the consequence!</h3>"
              document.getElementById("guess-letter").style.color = "red"
              playAgain(score,rand,alreadyPlayed)
          }
