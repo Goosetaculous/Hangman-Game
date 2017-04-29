@@ -1,5 +1,38 @@
+body{
+    background-color: dimgrey !important;
+    color: white !important;
+    font-family: 'Gloria Hallelujah', cursive !important;
+}
+
+.main {
+    margin-left:auto;
+    margin-right: auto;
+    width:500px;
+}
 #hint-letters {
     float: left;
     padding-right: 5px;
+}
+
+.guess-letter {
+    letter-spacing: 5px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: black !important;
+    height: 300px ;
+
+}
+#name-that-band {
+    color: white;
+}
+
+img {
+    width: 400px;
+    height: 200px;
+}
+.row {
+    text-align: center;
 }
 

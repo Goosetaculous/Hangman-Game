@@ -4,40 +4,28 @@
     <meta charset="UTF-8">
     <script type="text/javascript" src="assets/javascript/game.js"></script>
     <link rel="stylesheet" href="assets/css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Best damn game ever</title>
 </head>
 <body onload="initGame()">
-    <header>
-        <h1>Name that band!</h1>
+    <audio id="audio" src="http://www.soundjay.com/button/beep-24.mp3" autostart="false" ></audio>
+    <header class="container">
+        <div class="jumbotron">
+            <img src="http://www.metal-archives.com/images/6/8/3/0/68300_logo.jpg"/>
+            <h3 id="name-that-band">Name that band!</h3>
+        </div>
     </header>
     <nav></nav>
-    <div>
-        <section>
-            <div class="video"></div>
-            <div class="hints-container" id="hints-container">
-
-                <br>
-                <div id="hints">
-
-                </div>
-                <div id="blank-letters">
-
-                </div>
-            </div>
-
-        </section>
-        <aside>
-
-            <div id="instructions"></div>
-            <div id="game-result"></div>
-            <div class="guess-letter" id="guess-letter"></div>
-            <div class="tries" id="tries"></div>
-
-
-            <div class="letter-remaining"></div>
-            <div class="letter-guessed"></div>
-
-        </aside>
+    <div class="container">
+        <div class="row" id="instructions"></div>
+        <div class="row" id="hints"></div>
+        <div class="row" id="score"></div>
+        <div class="row" id="guess-letter"></div>
+        <div class="row" id="tries"></div>
+        <div class="row" id="already-guessed"></div>
 
     </div>
 
